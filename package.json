@@ -1,5 +1,5 @@
 {
-  "name": "data_flow",
+  "name": "vueclibase",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -10,8 +10,16 @@
   "dependencies": {
     "axios": "^0.18.0",
     "core-js": "^2.6.5",
-    "element-ui": "^2.10.1",
+    "cssnano": "^4.1.10",
+    "cssnano-preset-advanced": "^4.0.7",
     "normalize.css": "^8.0.0",
+    "postcss-aspect-ratio-mini": "^1.0.1",
+    "postcss-cssnext": "^3.1.0",
+    "postcss-import": "^12.0.1",
+    "postcss-px-to-viewport": "^1.1.0",
+    "postcss-url": "^8.0.0",
+    "postcss-viewport-units": "^0.1.6",
+    "postcss-write-svg": "^3.0.1",
     "vue": "^2.6.10",
     "vue-router": "^3.0.3",
     "vuex": "^3.0.1"
@@ -23,16 +31,18 @@
     "@vue/eslint-config-standard": "^4.0.0",
     "babel-eslint": "^10.0.1",
     "babel-plugin-import": "^1.8.0",
+    "css-loader": "^2.1.1",
     "eslint": "^5.16.0",
     "eslint-plugin-vue": "^5.0.0",
-    "http-proxy-middleware": "^0.19.1",
     "node-sass": "^4.11.0",
     "postcss-pxtorem": "^4.0.1",
     "qs": "^6.7.0",
     "sass-loader": "^7.1.0",
+    "style-loader": "^0.23.1",
+    "stylus": "^0.54.5",
+    "stylus-loader": "^3.0.2",
     "svg-sprite-loader": "^4.1.3",
     "vue-cli-plugin-mand": "^0.3.0",
-    "vue-template-compiler": "^2.5.21",
-    "webpack-dev-server": "^3.7.2"
+    "vue-template-compiler": "^2.5.21"
   }
 }

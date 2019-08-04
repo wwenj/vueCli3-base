@@ -13,14 +13,15 @@ const routes = [
     path: '/',
     redirect: '/test'
   },
-  {
-    path: '/',
-    name: 'Layout',
-    component: () => import('components/layout/main.vue'),
-    children: [
-      ...Test
-    ]
-  }
+  ...Test
+  // {
+  //   path: '/',
+  //   name: 'Layout',
+  //   component: () => import('components/layout/main.vue'),
+  //   children: [
+  //     ...Test
+  //   ]
+  // }
 ]
 
 /** 分模块的路由，合并传入Router */

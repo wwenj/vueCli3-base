@@ -7,6 +7,30 @@
     <link rel="icon" href="<%= BASE_URL %>favicon.ico">
     <title>基础构建</title>
   </head>
+  <script>
+    (function(window, document) {
+      function resize() {
+        var ww = window.innerWidth
+        if (ww > window.screen.width) {
+          window.requestAnimationFrame(resize)
+        } else {
+          if (ww > 750) {
+            ww = 750
+          }
+          document.documentElement.style.fontSize = ww * 100 / 750 + 'px'
+        }
+      }
+
+      resize();
+
+      window.addEventListener('resize', resize);
+      window.addEventListener('pageshow', function (e) {
+        if (e.presisted) {
+          resize();
+        }
+      });
+    })(window, document);
+  </script>
   <body>
     <div id="app"></div>
     <!-- built files will be auto injected -->

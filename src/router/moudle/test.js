@@ -1,6 +1,6 @@
 const TestRoutes = [
   {
-    path: 'test',
+    path: '/test',
     name: 'Home',
     component: () => import('views/test/Home.vue'),
     meta: {
